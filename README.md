@@ -54,7 +54,7 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 
 ### Getting Started
 
-1) Get an aws account, initialize it with this machine image from 'community amis' : ami-e29fc5f5
+1) Get an aws account, initialize it with this machine image from 'Community AMIs' : ami-e29fc5f5
 
 2) 
 username: icarus
