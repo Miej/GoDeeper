@@ -92,15 +92,15 @@ In general, a decent way to use this system is just to assume that what you need
 
 Just try some of these commands in the terminal:
 
-$ th
-$ pyspark
-$ digits-devserver
-$ cntk
-$ python
->>> import caffe
->>> import tensorflow   
->>> import theano
->>> import keras
+\$ th
+\$ pyspark
+\$ digits-devserver
+\$ cntk
+\$ python
+\>\>\> import caffe
+\>\>\> import tensorflow   
+\>\>\> import theano
+\>\>\> import keras
 
 
 9) For more information on build paths and such, please reference ~/.bashrc .  I tried to include most (if not all) of the relevant directories there.
