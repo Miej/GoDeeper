@@ -92,14 +92,22 @@ In general, a decent way to use this system is just to assume that what you need
 
 Just try some of these commands in the terminal:
 
-\$ th
-\$ pyspark
-\$ digits-devserver
-\$ cntk
-\$ python
+$ th
+
+$ pyspark
+
+$ digits-devserver
+
+$ cntk
+
+$ python
+
 \>\>\> import caffe
+
 \>\>\> import tensorflow   
+
 \>\>\> import theano
+
 \>\>\> import keras
 
 
