@@ -71,7 +71,7 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 
 2) 
 username: icarus
-password: changetheworld
+password: machinelearning
 
 3) Reboot the instance. (this starts the init scripts properly)
 
