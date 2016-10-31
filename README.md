@@ -101,7 +101,7 @@ Log into the instance via something like putty + xming, '$ vncserver -kill :1' t
 
 #### 8) Do all the machine learning.
 
-In general, a decent way to use this system is just to assume that what you need is already installed on it and configured properly.
+In general, a decent way to use this system is just to assume that what you need is already installed on it and configured to work.
 
 Just try some of these commands in the terminal:
 
