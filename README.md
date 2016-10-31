@@ -1,4 +1,8 @@
-# We Have To Go Deeper - aws p2.xlarge GPU optimized deep learning cluster grenade: ami-e29fc5f5
+# We Have To Go Deeper 
+
+## aws p2.xlarge GPU optimized deep learning cluster grenade: 
+
+#ami-e29fc5f5
 
 # Greetings, traveler.  
 
