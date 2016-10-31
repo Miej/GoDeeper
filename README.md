@@ -2,7 +2,7 @@
 
 ## aws p2.xlarge GPU optimized deep learning cluster grenade: 
 
-#ami-e29fc5f5
+### ami-e29fc5f5
 
 # Greetings, traveler.  
 
