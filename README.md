@@ -125,65 +125,130 @@ Oh yeah, and if you're just getting into machine learning, remember: change the 
 
 
 ### System
+
 aws p2.xlarge
+
 Ubuntu 14.04 LTS (Trusty Tahr)
+
 NVIDIA Tesla K80
+
 50 Gb storage
 
 
+
+
+
 ### AWS cli
+
 aws-cli 1.11.10
 
+
+
 ### NVIDIA things.
+
 NVIDIA CUDA 8.0
+
 NVIDIA cuDNN 5.1
+
 NVIDIA CUB 1.5.5
+
 NVIDIA DIGITS 5.1-dev
+
 NVIDIA CNMeM 1.0 (?)
 
+
+
 ### Pythony things.
+
 Anaconda 2
+
 python 2.7
+
 opencv 3.1.0
+
 spark 2.0.1
+
 caffe 1.0.0-rc3
+
 keras 1.1.0
+
 tensorflow 0.11.0rc0
+
 tf-learn 0.2.2
+
 theano 0.8.2
 
+
+
 ### Torch.
+
 torch 7
-##### See file luarocks_installs_versions.txt for included packages
+
+##### See file luarocks_installs_versions.txt in the home directory of the system for included packages
+
+
+
 
 
 ### Other languages/packages for ml/dl
+
 R 3.0.2
+
 shiny 0.14.1
 
 
+
+
+
 Scala 2.11.8
+
 scala sbt 0.13.12
+
+
+
 
 
 Julia 0.5
 
 
+
+
+
 IntelliJ IDEA 2016.2.5 # For DeepLearning4J
+
 maven 3.0.5
 
 
+
+
 Microsoft CNTK
+
 kaldi 1.0(?)
 
 
+
+
+
 ### Just a few BLAS/math/etc libs...
+
 ATLAS 3.10.1
+
 OpenBLAS 0.2.20
+
 MKL
+
 Microsoft MKLCustom
+
 openMPI 1.10.3
+
 zlib 1.2.8
+
 libzip 3.0
+
 Boost 1.54.0
+
 protobuf 3.1.0
+
+
+
+
