@@ -1,6 +1,6 @@
 # We Have To Go Deeper 
 
-## aws p2.xlarge GPU optimized deep learning cluster grenade.
+## aws p2.xlarge GPU optimized deep learning cluster-grenade.
 ### All installations are bleeding-edge as of Halloween 2016
 
 ### ami-a195cfb6
