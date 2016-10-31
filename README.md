@@ -27,17 +27,29 @@ include many of the other deep learning environments that I've been hearing of a
 #### Some hilights of the build:
 
 CUDA 8.0
+
 cuDNN 5.1
+
 OpenCV 3.1
+
 Spark 2.0
+
 Caffe 1.0
+
 Tensorflow
+
 Theano
+
 Keras  
+
 Torch 7
+
 Microsoft CNTK V2
+
 R
+
 Scala
+
 Julia
 
 also it comes with a virtual desktop set up via vncserver in case you're into that kind of thing.
