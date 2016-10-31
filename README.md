@@ -3,7 +3,7 @@
 ## aws p2.xlarge GPU optimized deep learning cluster grenade.
 ### All installations are bleeding-edge as of Halloween 2016
 
-### ami-e29fc5f5
+### ami-a195cfb6
 
 # Greetings, traveler.  
 
@@ -67,11 +67,11 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 
 ### Getting Started
 
-1) Get an aws account, initialize it with this machine image from 'Community AMIs' : ami-e29fc5f5
+1) Get an aws account, initialize it with this machine image from 'Community AMIs' : ami-a195cfb6
 
 2) 
 username: icarus
-password: machinelearning
+password: changetheworld
 
 3) Reboot the instance. (this starts the init scripts properly)
 
