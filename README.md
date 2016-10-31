@@ -7,9 +7,8 @@
 
 # Greetings, traveler.  
 
-Here we have a Deep Learning system image (AWS AMI) custom built for the p2.xlarge system.  
-I've had my share of difficulties with building various modules/packages/drivers personally, so I thought
-I would share this for any fellow ml/dl/ai researchers/professionals who feel they might benefit from not
+Here we have a Deep Learning system image (AWS AMI) custom built for the p2.xlarge system, which at ~1$ per hour is a 
+GREAT price for a machine as powerful as it is.  I've had my share of difficulties with building various modules/packages/drivers personally, so I thought  I would share this for any fellow ml/dl/ai researchers/professionals who feel they might benefit from not
 having to go through the lengthy process of debugging/hacking that I did..
 
 
@@ -31,6 +30,8 @@ CUDA 8.0
 
 cuDNN 5.1
 
+Microsoft CNTK V2
+
 OpenCV 3.1
 
 Spark 2.0
@@ -44,8 +45,6 @@ Theano
 Keras  
 
 Torch 7
-
-Microsoft CNTK V2
 
 R
 
