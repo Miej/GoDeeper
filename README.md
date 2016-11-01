@@ -92,10 +92,12 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 
 ### Getting Started
 
-1) Get an aws account, initialize it with this machine image from 'Community AMIs' : ami-a195cfb6
+1) Get an aws account, initialize it with this machine image from 'Community AMIs' : (eg., ami-a195cfb6 for US East ( N. Virginia )
 
-2) 
+2) user credentials:
+
 username: icarus
+
 password: changetheworld
 
 3) Reboot the instance. (this starts the init scripts properly)
