@@ -123,44 +123,33 @@ Oh yeah, and if you're just getting into machine learning, remember: change the 
 This will get fleshed out a little in the future, but for now, if you're new to aws/ml/etc, here are some links that will help you get set up in your exploration of this system, and the machinations
 
 1.  Getting the image set up on aws:  first, log in to your amazon account on the aws site.  You may need to send a reqest to AWS to increase your p2 instance limit to 1.  Should only take a few days to get approved.  When you're clear to start a p2.xlarge instance, you can load the ami of your choice by going to the EC2 section of aws, clicking 'create instance', and searching for the ami of your choice.
-
-ref: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html
+    -ref: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html
 
 2.  Once you've created your new instance, it will take a couple minutes to boot up.  Once it does so, reboot the instance once for good measure.  From there, you can access it either by ssh
-
-ref: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
-
-or by vnc (see step 5 in the quick-start guide)
+    -ref: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+    -or by vnc (see step 5 in the quick-start guide)
 
 3.  I personally use python for a lot of my work, and I especially like the jupyter notebook interface.  To use it, just type `jupyter notebook` into your terminal and hit enter.  From there, you can create new notebooks and run sections of code as you like.
-
-ref: https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html
+    -ref: https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html
 
 4.  Cool, so now you have the jupyter notebook interface up and running.  Next, you want to figure out what this whole 'machine learning' thing is.  There are a few tutorials/classes around the web, here's one by the notorious A.NG:
-
-ref: http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning
+    -ref: http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning
 
 5.  The python package 'scikit-learn' is wonderful and incredible and delightful and things.  Most things you want to do with non-deep learning models are already implemented quite nicely there. Check it out.  Here's a little tutorial page to get you started:
-
-ref: http://scikit-learn.org/stable/tutorial/
+    -ref: http://scikit-learn.org/stable/tutorial/
 
 6.  Machine learning tasks explored with sklearn also interface quite nicely with python's pandas package, and since it's built from a numpy foundation, you can do a lot of vaguely complex things to large datasets pretty quickly.  
-
-ref: http://pandas.pydata.org/pandas-docs/stable/10min.html
+    -ref: http://pandas.pydata.org/pandas-docs/stable/10min.html
 
 7.  A lot of very interesting problems in the field of machine learning/ai involve building systems that will be able to process and "understand" visual data in order to perform a task/analysis.  A good starting point for this is the python package opencv.  It's very cool, and very powerful when used properly.  Check it out.
-
-ref: http://docs.opencv.org/trunk/d9/df8/tutorial_root.html
+    -ref: http://docs.opencv.org/trunk/d9/df8/tutorial_root.html
 
 8.  So now you're tired of that, and want to do some real deep learning and start making cool pictures like Google's inceptionism deep dreams.  For a little introduction into the current methods/models being used in the field, check out this site:
-
-ref: http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial
+    -ref: http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial
 
 9.  Then, to start playing around with some more code and model-building:
-
-ref: http://deeplearning.net/tutorial/gettingstarted.html
-
-ref: http://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
+    -ref: http://deeplearning.net/tutorial/gettingstarted.html
+    -ref: http://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
 
 10.  Explore.  There are a lot of installations listed here, and they each perform certain tasks in different ways.  Figure out what you like, what sort of problems you want to work on, what tools are best-suited to solving them.  Google is your friend.  Machine learning/deep learning/ai is like a cave.  The entrance is well-lit and well-known, but there's still plenty of pathways that have yet to be discovered.  So grab yourself a torch(7) and find yourself a dark tunnel that nobody's been down yet.
 
