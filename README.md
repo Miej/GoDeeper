@@ -74,7 +74,7 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 
 5. To access the vncserver-hosted desktop, I personally like VNC Viewer, since it's pretty lightweight and simple to use. You can find it here: https://www.realvnc.com/download/viewer/
     - (I still haven't quite worked out the issue with the super button not opening the search menu properly, but oh well.  If you have tips on getting that to work, let me know.)
-    - Then, to load the desktop, just boot up VNC Viewer, put your public DNS in the "VNC Server:" box, followed by ":1" (without quotes) to access the virtual desktop loaded on screen :1. 
+    - Then, to load the desktop, just boot up VNC Viewer, put your public DNS in the "VNC Server:" box, followed by ":1" (without quotes) to access the virtual desktop loaded on screen :1.  (eg: `ec2-55-155-222-144.compute-1.amazonaws.com:1` )
     - Password: `godeeper`
 
 6. If you are a master sysadmin and you think the word 'desktop' is dirty, you can disable the auto-load script at /etc/init.d/vncserver.  
