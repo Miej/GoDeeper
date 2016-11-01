@@ -4,18 +4,31 @@
 ### All installations are bleeding-edge as of Halloween 2016
 
 ### Region-specific AMIs
+
 ami-a195cfb6 - US East (N. Virginia)
+
 ami-86277de3 - US East (Ohio)
+
 ami-3e22685e - US West (N. California)
+
 ami-da3096ba - US West (Oregon)
+
 ami-afa3e9dc - EU (Ireland)
+
 ami-8f906be0 - EU (Frankfurt)
+
 ami-32d37e53 - Asia Pacific (Tokyo)
+
 ami-6a20f404 - Asia Pacific (Seoul)
+
 ami-20e54543 - Asia Pacific (Singapore)
+
 ami-6f2b170c - Asia Pacific (Sydney)
+
 ami-8da5d1e2 - Asia Pacific (Mumbai)
+
 ami-b3a438df - South America (São Paulo)
+
 
 
 # Greetings, traveler.  
