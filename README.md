@@ -1,84 +1,54 @@
 # We Have To Go Deeper 
 
-## aws p2.xlarge GPU optimized deep learning cluster-grenade.
+## AWS p2.xlarge GPU optimized deep learning cluster-grenade.
 ### All installations are bleeding-edge as of Halloween 2016
 
 ### Region-specific AMIs
 
-ami-a195cfb6 - US East (N. Virginia)
-
-ami-86277de3 - US East (Ohio)
-
-ami-3e22685e - US West (N. California)
-
-ami-da3096ba - US West (Oregon)
-
-ami-afa3e9dc - EU (Ireland)
-
-ami-8f906be0 - EU (Frankfurt)
-
-ami-32d37e53 - Asia Pacific (Tokyo)
-
-ami-6a20f404 - Asia Pacific (Seoul)
-
-ami-20e54543 - Asia Pacific (Singapore)
-
-ami-6f2b170c - Asia Pacific (Sydney)
-
-ami-8da5d1e2 - Asia Pacific (Mumbai)
-
-ami-b3a438df - South America (São Paulo)
-
-
+| Region                  | AMI ID       |
+| ----------------------- |:------------:|
+| US East (N. Virginia)   | `ami-a195cfb6` |
+| US East (Ohio)          | `ami-86277de3` |
+| US West (N. California) | `ami-3e22685e` |
+| US West (Oregon)        | `ami-da3096ba` |
+| EU (Ireland)            | `ami-afa3e9dc` |
+| EU (Frankfurt)          | `ami-8f906be0` |
+| Asia Pacific (Tokyo)    | `ami-32d37e53` |
+| Asia Pacific (Seoul)    | `ami-6a20f404` |
+| Asia Pacific (Singapore)| `ami-20e54543` |
+| Asia Pacific (Sydney)   | `ami-6f2b170c` |
+| Asia Pacific (Mumbai)   | `ami-8da5d1e2` |
+| South America (São Paulo)| `ami-b3a438df` |
 
 # Greetings, traveler.  
 
-Here we have a Deep Learning system image (AWS AMI) custom built for the p2.xlarge system, which at ~1$ per hour is a 
-GREAT price for a machine as powerful as it is.  I've had my share of difficulties with building various modules/packages/drivers personally, so I thought  I would share this for any fellow ml/dl/ai researchers/professionals who feel they might benefit from not
-having to go through the lengthy process of debugging/hacking that I did..
+Here we have a Deep Learning system image (AWS AMI) custom built for the p2.xlarge system, which at ~$1 per hour is a GREAT price for a machine as powerful as it is.  I've had my share of difficulties with building various modules/packages/drivers personally, so I thought I would share this for any fellow ml/dl/ai researchers/professionals who feel they might benefit from not
+having to go through the lengthy process of debugging/hacking that I did.
 
 
 ## Design Philosophy
 
-I wanted to build a flexible system that would allow myself and others to seamlessly explore whatever machine learning / 
-deep learning system I wanted to, while side-stepping the plethora of dependency conflict issues / custom 
-build issues that inevitably seem to arise each time I try a new package.  To that end, I wanted to start 
-off with a clean system, and do a simul-build of all of the latest, bleeding-edge packages around.  I'm 
-sure I inevitably missed a few things here and there, but feel free to shoot me an email at mark.woods89 (at) 
-gmail (dot) com if theres something you'd like to see added to this image.
+I wanted to build a flexible system that would allow myself and others to seamlessly explore whatever machine learning / deep learning system I wanted to, while side-stepping the plethora of dependency conflict issues / custom build issues that inevitably seem to arise each time I try a new package.  To that end, I wanted to start off with a clean system, and do a simul-build of all of the latest, bleeding-edge packages around.  I'm sure I inevitably missed a few things here and there, but feel free to shoot me an email at mark.woods89 (at) gmail (dot) com if theres something you'd like to see added to this image.
 
-This build is somewhat weighted towards python-facing systems because of my background, but I tried to also
-include many of the other deep learning environments that I've been hearing of around town.  
+This build is somewhat weighted towards python-facing systems because of my background, but I tried to also include many of the other deep learning environments that I've been hearing of around town.  
 
-#### Some hilights of the build:
+#### Some highlights of the build:
 
-CUDA 8.0
+* CUDA 8.0
+* cuDNN 5.1
+* Microsoft CNTK V2
+* OpenCV 3.1
+* Spark 2.0
+* Caffe 1.0
+* Tensorflow
+* Theano
+* Keras  
+* Torch 7
+* R
+* Scala
+* Julia
 
-cuDNN 5.1
-
-Microsoft CNTK V2
-
-OpenCV 3.1
-
-Spark 2.0
-
-Caffe 1.0
-
-Tensorflow
-
-Theano
-
-Keras  
-
-Torch 7
-
-R
-
-Scala
-
-Julia
-
-also it comes with a virtual desktop set up via vncserver in case you're into that kind of thing.
+Also it comes with a virtual desktop set up via vncserver in case you're into that kind of thing.
 
 
 ### Additional Notes
@@ -90,71 +60,53 @@ Also, the GPU has been max-clocked ala:
 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#optimize_gpu
 
 
-### Getting Started
+## Getting Started
 
-1) Get an aws account, initialize it with this machine image from 'Community AMIs' : (eg., ami-a195cfb6 for US East ( N. Virginia )
+1. Get an aws account, initialize it with this machine image from 'Community AMIs' e.g. ami-a195cfb6 for US East (N. Virginia).
 
-2) user credentials:
+2. User credentials:
+    username: `icarus`
+    password: `changetheworld`
 
-username: icarus
+3. Reboot the instance. (this starts the init scripts properly)
 
-password: changetheworld
+4. Run `aws configure` so that you can use the super handy-dandy aws-cli.
 
-3) Reboot the instance. (this starts the init scripts properly)
+5. To access the vncserver-hosted desktop, I personally like VNC Viewer, since it's pretty lightweight and simple to use. You can find it here: https://www.realvnc.com/download/viewer/
+    - (I still haven't quite worked out the issue with the super button not opening the search menu properly, but oh well.  If you have tips on getting that to work, let me know.)
+    - Then, to load the desktop, just boot up VNC Viewer, put your public DNS in the "VNC Server:" box, followed by ":1" (without quotes) to access the virtual desktop loaded on screen :1. 
+    - Password: `godeeper`
 
-4) run '$ aws configure' so that you can use the super handy-dandy aws-cli.
+6. If you are a master sysadmin and you think the word 'desktop' is dirty, you can disable the auto-load script at /etc/init.d/vncserver.  
+    - Alternatively, you can configure it as you like there.  It's currently set to create a 1920x1080 desktop at 24-bit color depth.
 
-5) To access the vncserver-hosted desktop, I personally like VNC Viewer, since it's pretty lightweight and simple to use.
-You can find it here: https://www.realvnc.com/download/viewer/
+7. A few things still dont work quite properly due to the system being a headless server with the bleeding-edge drivers required for the installed packages.
+    - For example, gnome-control-center will give an ominous error about a BadRequest from the X Window System.  I honestly recommend not trying to get too deep into debugging that, it's a pain.
+    - Instead, there are packages around that will allow you to do what you need to in the system settings, or as an alternative:
 
-(I still haven't quite worked out the issue with the super button not opening the search menu properly, but oh well.  If you have tips on getting that to work, let me know.)
+    Log into the instance via something like putty + xming, '$ vncserver -kill :1' to shut down the virtual desktop and run gnome-control-center from your terminal login. That will load a gui interface for that if you need it.
+    - (If anyone knows a way to get it working in the vnc desktop, I'd be happy to hear.  For time's sake though, I chose to just adopt the workaround)
 
-Then, to load the desktop, just boot up VNC Viewer, put your public DNS in the 'VNC Server:' box, followed by ':1' (without quotes)
-to access the virtual desktop loaded on screen :1.  
+8. **Do all the machine learning.**
+    In general, a decent way to use this system is just to assume that what you need is already installed on it and configured to work.
 
-password: godeeper
+    Just try some of these commands in the terminal:
+    ```
+    $ th
+    $ pyspark
+    $ digits-devserver
+    $ cntk
+    $ python
+    >>> import caffe
+    >>> import tensorflow   
+    >>> import theano
+    >>> import keras
+    ```
 
-6) If you are a master sysadmin and you think the word 'desktop' is dirty, you can disable the auto-load script at /etc/init.d/vncserver .  
-Alternatively, you can configure it as you like there.  It's currently set to create a 1920x1080 desktop at 24-bit color depth.
+9. For more information on build paths and such, please reference `~/.bashrc`.  I tried to include most (if not all) of the relevant directories there.
 
-
-7) A few things still dont work quite properly due to the system being a headless server with the bleeding-edge drivers required for the installed packages.
-For example, gnome-control-center will give an ominous error about a BadRequest from the X Window System.  I honestly recommend not trying to get too deep into debugging that, it's a pain.
-Instead, there are packages around that will allow you to do what you need to in the system settings, or as an alternative:
-
-Log into the instance via something like putty + xming, '$ vncserver -kill :1' to shut down the virtual desktop and run gnome-control-center from your terminal login. That will load a gui interface for that if you need it.
-(If anyone knows a way to get it working in the vnc desktop, I'd be happy to hear.  For time's sake though, I chose to just adopt the workaround)
-
-
-#### 8) Do all the machine learning.
-
-In general, a decent way to use this system is just to assume that what you need is already installed on it and configured to work.
-
-Just try some of these commands in the terminal:
-
-$ th
-
-$ pyspark
-
-$ digits-devserver
-
-$ cntk
-
-$ python
-
-\>\>\> import caffe
-
-\>\>\> import tensorflow   
-
-\>\>\> import theano
-
-\>\>\> import keras
-
-
-9) For more information on build paths and such, please reference ~/.bashrc .  I tried to include most (if not all) of the relevant directories there.
-
-10) Additionally, I set up a little script in the home directory to run commands sequentially followed by shutting down the instance.
-It's not pretty code, but for something that took less than 2min to make, it comes in handy when you want to get more work done in a night, but dont want to waste $$ by leaving your instance running.  Don't forget to alter it so that it uses your own instance ID !
+10. Additionally, I set up a little script in the home directory to run commands sequentially followed by shutting down the instance.
+It's not pretty code, but for something that took less than 2 min to make, it comes in handy when you want to get more work done in a night, but dont want to waste $$ by leaving your instance running.  Don't forget to alter it so that it uses your own instance ID!
 
 
 ## And that's it!  Enjoy folks!
