@@ -44,7 +44,7 @@ I wanted to build a flexible system that would allow myself and others to seamle
 deep learning system I wanted to, while side-stepping the plethora of dependency conflict issues / custom 
 build issues that inevitably seem to arise each time I try a new package.  To that end, I wanted to start 
 off with a clean system, and do a simul-build of all of the latest, bleeding-edge packages around.  I'm 
-sure I inevitably missed a few things here and there, but feel free to shoot me an email at mark.woods (at) 
+sure I inevitably missed a few things here and there, but feel free to shoot me an email at mark.woods89 (at) 
 gmail (dot) com if theres something you'd like to see added to this image.
 
 This build is somewhat weighted towards python-facing systems because of my background, but I tried to also
