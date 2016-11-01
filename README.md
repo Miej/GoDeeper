@@ -77,7 +77,7 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
     - Then, to load the desktop, just boot up VNC Viewer, put your public DNS in the "VNC Server:" box, followed by ":1" (without quotes) to access the virtual desktop loaded on screen :1.  (eg: `ec2-55-155-222-144.compute-1.amazonaws.com:1` )
     - Password: `godeeper`
 
-6. If you are a master sysadmin and you think the word 'desktop' is dirty, you can disable the auto-load script at /etc/init.d/vncserver.  
+6. If you are a master sysadmin and you think the word 'desktop' is dirty, you can disable the auto-load script at /etc/init.d/vncserver by deleting the file, or moving it to a backup or some such.
     - Alternatively, you can configure it as you like there.  It's currently set to create a 1920x1080 desktop at 24-bit color depth.
 
 7. A few things still dont work quite properly due to the system being a headless server with the bleeding-edge drivers required for the installed packages.
