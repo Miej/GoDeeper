@@ -110,6 +110,9 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 10. Additionally, I set up a little script in the home directory to run commands sequentially followed by shutting down the instance.
 It's not pretty code, but for something that took less than 2 min to make, it comes in handy when you want to get more work done in a night, but dont want to waste $$ by leaving your instance running.  Don't forget to alter it so that it uses your own instance ID!
 
+### Saving money with AWS spot instances.
+Using AWS spot instances can save you 20-80% per hour. The downside is that AWS reserves the right to shutdown your instance if the demand for that instance type goes up. If you are willing to take that risk then you should use these AMIs with https://github.com/Jakobovski/aws-spot-bot which will find and launch the cheapest and least likely to get shutdown spot instances.
+
 
 ## And that's it!  Enjoy folks!
 
