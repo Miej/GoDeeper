@@ -285,13 +285,22 @@ protobuf 3.1.0
 
 
 #### TODO for next release:
+
 build compatibility for python3
+
 build docker image
+
 add mxnet
+
 add nolearn
+
 add lasagne
+
 add octave
+
 flesh out tutorial section
+
 look into turning this into an ansible playbook?
 
+Include dl4j
 
