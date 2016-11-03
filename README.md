@@ -304,3 +304,4 @@ look into turning this into an ansible playbook?
 
 Include dl4j
 
+shogun-tk ?
