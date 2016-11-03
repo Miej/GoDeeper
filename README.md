@@ -111,7 +111,7 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 It's not pretty code, but for something that took less than 2 min to make, it comes in handy when you want to get more work done in a night, but dont want to waste $$ by leaving your instance running.  Don't forget to alter it so that it uses your own instance ID!
 
 ### Saving money with AWS spot instances.
-Using AWS spot instances can save you 20-80% per hour. The downside is that AWS reserves the right to shutdown your instance if the demand for that instance type goes up. If you are willing to take that risk then you should use these AMIs with https://github.com/Jakobovski/aws-spot-bot which will find and launch the cheapest and least likely to get shutdown spot instances.
+Using AWS spot instances can save you 20-80% per hour. The downside is that AWS reserves the right to shutdown your instance if the demand for that instance type goes up. Zohar Jackson has provided a script to attempt to optimize aws spot instance choice and pricing if you want to go that route, you can check it out here: https://github.com/Jakobovski/aws-spot-bot It aims to find and launch the cheapest and least likely to get shutdown spot instances.  AWS also provides spot instances that can be reserved for a set length of time.
 
 
 ## And that's it!  Enjoy folks!
