@@ -64,13 +64,13 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
 
 ## Quick Start Guide
 
-1. Get an aws account, initialize it with this machine image from 'Community AMIs' e.g. ami-a195cfb6 for US East (N. Virginia).
+1. Get an aws account, initialize it with this machine image from 'Community AMIs' e.g. ami-a195cfb6 for US East (N. Virginia).  Make sure you have your security groups set up appropriately.  I personally like to allow all inbound/outbound traffic to/from my personal ip, but you can customize this how you want.  port 22 for ssh, ports 5900/5901 for vnc.
 
 2. User credentials:
     username: `icarus`
     password: `changetheworld`
 
-3. Reboot the instance. (this starts the init scripts properly)
+3. Reboot the instance. (this starts the init scripts properly).  For SSH-only access, you can login as the default username `ubuntu`, no password.  Then switch to user: `icarus` via ` $ su icarus `
 
 4. Run `aws configure` so that you can use the super handy-dandy aws-cli.
 
