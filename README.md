@@ -70,7 +70,7 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html#
     username: `icarus`
     password: `changetheworld`
 
-3. Reboot the instance. (this starts the init scripts properly).  For SSH-only access, you can login as the default username `ubuntu`, no password.  Then switch to user: `icarus` via ` $ su icarus `
+3. Reboot the instance. (this starts the init scripts properly).  For SSH-only access, you will need to connect with your cert file from aws, as described here: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-connect-to-instance-linux .  You can login as the default username `ubuntu`, no password.  Then switch to user: `icarus` via ` $ su icarus ` .  Alternatively, I've also set up a virtual desktop on this image that can be accessed by vnc.  See Step 5.
 
 4. Run `aws configure` so that you can use the super handy-dandy aws-cli.
 
