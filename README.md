@@ -311,3 +311,6 @@ shogun-tk ?
 include perl
 
 include https://github.com/usnistgov/F4DE because it is glorious.
+
+Suggestion: Install Cuda and cuDNN using the -no-opengl-files option.
+https://davidsanwald.github.io/2016/11/13/building-tensorflow-with-gpu-support.html
