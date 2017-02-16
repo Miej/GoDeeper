@@ -314,3 +314,10 @@ include https://github.com/usnistgov/F4DE because it is glorious.
 
 Suggestion: Install Cuda and cuDNN using the -no-opengl-files option.
 https://davidsanwald.github.io/2016/11/13/building-tensorflow-with-gpu-support.html
+
+
+
+
+### Feeling generous?
+
+Costs about 60 USD/mo to maintain the machine images across the world, which I'm generally happy to do in the name of making these tools easier to access.  That said, if you want to help contribute to the cause, any and all donations are highly appreciated.  You can use this link if you want to contribute to the ai/beer fund: www.paypal.me/miej
