@@ -1,3 +1,6 @@
+## Hey guys, just a heads-up:  this aws machine image costs ~90$ / month, and at this time it has become unfeasible to continue operating the listed amis.  To that extent, I will be shutting them down at the end of this month.  That said, I'm happy to keep them up and operating longer if we can provide for it via donations, which can be made via - www.paypal.me/miej .  As a precaution though, you should seek to back up anything you need on your own account.  Cheers!  It was fun working on this project, and I hope it helped some people out!
+
+
 # We Have To Go Deeper 
 
 ## AWS p2.xlarge GPU optimized deep learning cluster-grenade.
@@ -320,6 +323,6 @@ https://davidsanwald.github.io/2016/11/13/building-tensorflow-with-gpu-support.h
 
 ### Feeling generous?
 
-Costs about 60 USD/mo to maintain the machine images across the world, which I'm generally happy to do in the name of making these tools easier to access.  That said, if you want to help contribute to the cause, any and all donations are highly appreciated.  You can use this link if you want to contribute to the ai/beer fund: 
+Costs about 90 USD/mo to maintain the machine images across the world, which I'm generally happy to do in the name of making these tools easier to access.  That said, if you want to help contribute to the cause, any and all donations are highly appreciated.  You can use this link if you want to contribute to the ai/beer fund: 
 
 www.paypal.me/miej
