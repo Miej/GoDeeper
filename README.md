@@ -1,4 +1,4 @@
-## Hey guys, just a heads-up:  this aws machine image costs ~90$ / month, and at this time it has become unfeasible to continue operating the listed amis.  To that extent, I will be shutting them down at the end of this month.  That said, I'm happy to keep them up and operating longer if we can provide for it via donations, which can be made via - www.paypal.me/miej .  As a precaution though, you should seek to back up anything you need on your own account.  Cheers!  It was fun working on this project, and I hope it helped some people out!
+## Hey guys, just a heads-up:  closed down now.  cheers!
 
 
 # We Have To Go Deeper 
