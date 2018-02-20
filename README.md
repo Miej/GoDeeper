@@ -10,18 +10,7 @@
 
 | Region                  | AMI ID       |
 | ----------------------- |:------------:|
-| US East (N. Virginia)   | `ami-a195cfb6` |
-| US East (Ohio)          | `ami-86277de3` |
-| US West (N. California) | `ami-3e22685e` |
-| US West (Oregon)        | `ami-da3096ba` |
-| EU (Ireland)            | `ami-afa3e9dc` |
-| EU (Frankfurt)          | `ami-8f906be0` |
-| Asia Pacific (Tokyo)    | `ami-32d37e53` |
-| Asia Pacific (Seoul)    | `ami-6a20f404` |
-| Asia Pacific (Singapore)| `ami-20e54543` |
-| Asia Pacific (Sydney)   | `ami-6f2b170c` |
-| Asia Pacific (Mumbai)   | `ami-8da5d1e2` |
-| South America (São Paulo)| `ami-b3a438df` |
+-not available-
 
 # Greetings, traveler.  
 
